@@ -22,6 +22,13 @@ This project is a boilerplate for creating a Minecraft server plugin using the P
     ```
     The compiled JAR file will be located in `build/libs/minecraft-server-1.0.jar`.
 
+## Using IntelliJ IDEA
+
+1. Open the project as a Gradle project in IntelliJ.
+2. Gradle will download the Paper API automatically.
+3. Build the plugin using the **Gradle** panel (task `build`).
+4. The built JAR will appear in `build/libs/` as described above.
+
 ## Running the Plugin
 
 1.  **Download Paper Server:**
@@ -47,6 +54,14 @@ This project is a boilerplate for creating a Minecraft server plugin using the P
 -   Modify `src/main/java/com/example/minecraftserver/Main.java` to add your custom plugin logic.
 -   Adjust plugin details (name, version, description) in `src/main/resources/plugin.yml`.
 -   Configure server properties by editing `server.properties` in your Paper server directory.
+
+## Gameplay
+
+With the server running, join from your Minecraft client (Multiplayer > Add Server) using the IP and port of your Paper server (default `25565`).
+
+- Use `/games` in chat to open the game selection menu.
+- Choose **PVP 1v1** to enter the duel queue. When another player joins, both players are teleported to the arena and fight until one wins.
+- Choose **Parkour** to teleport to the parkour course starting position.
 
 ## Deployment (on a Linux VPS)
 
