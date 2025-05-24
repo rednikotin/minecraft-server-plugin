@@ -1,0 +1,20 @@
+# MinecraftServer Plugin Configuration
+
+# PvP Game Settings
+pvp:
+  world: "world" # World for PvP arenas
+  lobby_spawn: "0.5,65.0,0.5,0,0" # Format: x,y,z,yaw,pitch
+  arena_spawn1: "100.5,65.0,100.5,90,0"
+  arena_spawn2: "110.5,65.0,100.5,-90,0"
+
+# Parkour Game Settings
+parkour:
+  world: "world" # World for Parkour course
+  lobby_spawn: "0.5,65.0,0.5,0,0" # Return location after finishing/leaving parkour
+  start_point: "50.5,65.0,50.5,0,0"
+  # Checkpoints are a list of strings
+  checkpoints:
+    - "60.5,67.0,50.5,0,0"
+    - "70.5,65.0,60.5,0,0"
+  end_point: "80.5,70.0,60.5,0,0"
+  void_level: 0.0 # Y-coordinate below which player is considered to have fallen into void
