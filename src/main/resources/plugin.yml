@@ -1,0 +1,4 @@
+name: MinecraftServer
+version: 1.0
+main: com.example.minecraftserver.Main
+api-version: '1.21'
