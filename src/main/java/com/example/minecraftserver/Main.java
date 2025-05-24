@@ -80,4 +80,13 @@ public class Main extends JavaPlugin {
     public GameManager getGameManager() {
         return gameManager;
     }
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (command.getName().equalsIgnoreCase("games") && sender instanceof Player) {
+            gameMenu.open((Player) sender);
+            return true;
+        }
+        return false;
+    }
 }
