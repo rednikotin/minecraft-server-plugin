@@ -1,8 +1,12 @@
 name: MinecraftServer
-version: 1.0
+version: '1.0' # Enclosed version in quotes
 main: com.example.minecraftserver.Main
 api-version: '1.21'
+# author: YourName # Optional
+# description: A Minecraft plugin with PvP and Parkour games. # Optional
+
 commands:
-  games:
-    description: Open game selection menu
-    usage: /games
+  game:
+    description: Main command for games and game menu.
+    usage: "/game <menu|join|leave> [gameType]"
+    aliases: [games, play] # Added 'play' alias
